@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
+    "start2": "nodemon --exec babel-node src/index.js",
+    "start": "nodemon -r esm src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "@babel/core": "^7.3.4",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4",
+    "esm": "^3.2.18",
     "nodemon": "^1.18.10"
   },
   "dependencies": {
